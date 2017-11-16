@@ -11,6 +11,10 @@ function addFunction(atomNum, symbol, weight, elecNeg, stateOfMatter); {
 additionList.push(weight);
 displayList
 }
+function combineFunction(){
+  for (i = 0; i < additionList.length; i++) {
 
-                   </script>
+  }
+}
+</script>
 </html>
