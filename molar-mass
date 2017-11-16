@@ -1,0 +1,16 @@
+<doctype html>
+<html>
+<button onclick = "addFunction(1, H, 1.00784)">Hydrogen</button>
+<button onclick = "a
+
+
+<script>
+var additionList = [];
+var displayList = [];
+function addFunction(atomNum, symbol, weight, elecNeg, stateOfMatter); {
+additionList.push(weight);
+displayList
+}
+
+                   </script>
+</html>
