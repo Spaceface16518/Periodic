@@ -12,8 +12,9 @@ additionList.push(weight);
 displayList
 }
 function combineFunction(){
+var sum = 0
   for (i = 0; i < additionList.length; i++) {
-
+sum = sum + additionList[i]
   }
 }
 </script>
