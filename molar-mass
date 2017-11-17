@@ -7,15 +7,19 @@
 <script>
 var additionList = [];
 var displayList = [];
-function addFunction(atomNum, symbol, weight, elecNeg, stateOfMatter); {
+function addFunction(atomNum, symbol, weight) {
 additionList.push(weight);
-displayList
+displayList.push(symbol)
 }
 function combineFunction(){
 var sum = 0
   for (i = 0; i < additionList.length; i++) {
 sum = sum + additionList[i]
   }
+  return sum
 }
+addFunction(1, 'H', 1.00784)
+console.log(displayList)
+console.log(sum)
 </script>
 </html>
