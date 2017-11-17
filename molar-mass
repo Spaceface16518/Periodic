@@ -1,7 +1,6 @@
 <doctype html>
 <html>
 <button onclick = "addFunction(1, H, 1.00784)">Hydrogen</button>
-<button onclick = "a
 
 
 <script>
