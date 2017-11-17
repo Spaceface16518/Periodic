@@ -1,1 +1,45 @@
+var Hydrogen = {
+  atomNum: 1,
+  symbol: 'H',
+  weight: 1.00784,
+}
+var Helium = {
+  atomNum: 2,
+  symbol: 'He',
+  weight: 4.002602,
+}
+var Lithium = {
+  atomNum: 3,
+  symbol: 'Li',
+  weight: 6.938,
+}
+var Carbon = {
+  atomNum: 6,
+  symbol: 'C',
+  weight: 12.0096,
+}
+var Nitrogen = {
+  atomNum: 7,
+  symbol: 'N',
+  weight: 14.00643
+}
+var Oxygen = {
+  atomNum: 8,
+  symbol: 'O',
+  weight: 15.99903,
+}
+var Fluorine = {
+  atomNum: 9,
+  symbol: 'F',
+  weight: 18.9984032
+}
 
+
+var addArray = [Oxygen.weight, Carbon.weight, Nitrogen.weight, Carbon.weight];
+var sum = 0
+function MyFunction() {
+  for (var i = 0; i < addArray.length; i++) {
+    sum = sum + addArray[i];
+    console.log(sum);
+  }
+}
