@@ -1,9 +1,24 @@
 <doctype html>
 <html>
-<button onclick = "addFunction(1, H, 1.00784)">Hydrogen</button>
+<button onclick = "addFunction()">Hydrogen</button>
 
 
 <script>
+var Hydrogen = {
+chemicalSymbol: 'H',
+atomicNumber: 1,
+molarMass: 1.00784
+}
+var Helium = {
+chemicalSymbol = 'He',
+atomicNumber: 2,
+molarMass: 4.002602
+}
+var Lithium {
+chemicalSymbol: 'Li',
+atomicNumber: 3,
+molarMass: 6.938
+}
 var additionList = [];
 var displayList = [];
 function addFunction(atomNum, symbol, weight) {
