@@ -137,11 +137,11 @@ var Lead = {
 
 var addArray = [Lead.weight, Mercury.weight, Xenon.weight, Iodine.weight];
 var sum = 0
-function MyFunction() {
+function myFunction() {
   for (var i = 0; i < addArray.length; i++) {
     sum = sum + addArray[i];
-    
+
   }
   console.log(sum)
 }
-MyFunction();
+myFunction();
