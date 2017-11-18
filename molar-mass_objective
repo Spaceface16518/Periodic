@@ -33,7 +33,6 @@ var Fluorine = {
   symbol: 'F',
   weight: 18.9984032
 }
-<<<<<<< HEAD
 var Sodium = {
 atomNum: 11,
 symbol: 'Na',
@@ -132,10 +131,10 @@ var Lead = {
 -Zinc 30
 -Cobalt 27
 */
-=======
 
 
->>>>>>> c0cea8dbb3d758d43ac8060948db90390dbdb046
+
+
 var addArray = [Oxygen.weight, Carbon.weight, Nitrogen.weight, Carbon.weight];
 var sum = 0
 function MyFunction() {
