@@ -43,7 +43,7 @@ var Magnesium = {
   symbol: 'Mg',
   weight: 24.3050
 }
-var Aluminum {
+var Aluminum = {
   atomNum: 13,
   symbol: 'Al',
   weight: 26.9815386
@@ -55,7 +55,7 @@ var Silicon = {
 }
 var Phosphorus = {
   atomNum: 15,
-  symbol: 'P'
+  symbol: 'P',
   weight: 30.973762
 }
 var Sulfur = {
@@ -84,7 +84,7 @@ var Bromine = {
   weight: 79.904
 }
 var Silver = {
-  atomNum: 47
+  atomNum: 47,
   symbol: 'Ag',
   weight: 107.8682
 }
@@ -104,18 +104,18 @@ var Xenon = {
   weight: 131.293
 }
 var Gold = {
-  atomNum: 79
-  symbol: Au
+  atomNum: 79,
+  symbol: 'Au',
   weight: 196.966569
 }
 var Mercury = {
-  atomNum: 80
+  atomNum: 80,
   symbol: 'Hg',
   weight: 200.59
 }
 var Lead = {
-  atomNum: 82
-  symbol: 'Pb'
+  atomNum: 82,
+  symbol: 'Pb',
   weight: 207.2
 }
 
@@ -135,11 +135,13 @@ var Lead = {
 
 
 
-var addArray = [Oxygen.weight, Carbon.weight, Nitrogen.weight, Carbon.weight];
+var addArray = [Lead.weight, Mercury.weight, Xenon.weight, Iodine.weight];
 var sum = 0
 function MyFunction() {
   for (var i = 0; i < addArray.length; i++) {
     sum = sum + addArray[i];
-    console.log(sum);
+    
   }
+  console.log(sum)
 }
+MyFunction();
