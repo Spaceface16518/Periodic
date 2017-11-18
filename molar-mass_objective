@@ -33,8 +33,104 @@ var Fluorine = {
   symbol: 'F',
   weight: 18.9984032
 }
+var Sodium = {
+atomNum: 11,
+symbol: 'Na',
+weight: 22.9897693,
+}
+var Magnesium = {
+  atomNum: 12,
+  symbol: 'Mg',
+  weight: 24.3050
+}
+var Aluminum {
+  atomNum: 13,
+  symbol: 'Al',
+  weight: 26.9815386
+}
+var Silicon = {
+  atomNum: 14,
+  symbol: 'Si',
+  weight: 28.084
+}
+var Phosphorus = {
+  atomNum: 15,
+  symbol: 'P'
+  weight: 30.973762
+}
+var Sulfur = {
+  atomNum: 16,
+  symbol: 'S',
+  weight: 32.059
+}
+var Chlorine = {
+  atomNum: 17,
+  symbol: 'Cl',
+  weight: 35.446
+}
+var Potassium = {
+  atomNum: 19,
+  symbol: 'K',
+  weight: 39.0983
+}
+var Calcium = {
+  atomNum: 20,
+  symbol: 'Ca',
+  weight: 40.078
+}
+var Bromine = {
+  atomNum: 35,
+  symbol: 'Br',
+  weight: 79.904
+}
+var Silver = {
+  atomNum: 47
+  symbol: 'Ag',
+  weight: 107.8682
+}
+var Antimony = {
+  atomNum: 51,
+  symbol:'Sb',
+  weight: 121.760
+}
+var Iodine = {
+  atomNum: 53,
+  symbol: 'I',
+  weight: 126.90447
+}
+var Xenon = {
+  atomNum: 54,
+  symbol: 'Xe',
+  weight: 131.293
+}
+var Gold = {
+  atomNum: 79
+  symbol: Au
+  weight: 196.966569
+}
+var Mercury = {
+  atomNum: 80
+  symbol: 'Hg',
+  weight: 200.59
+}
+var Lead = {
+  atomNum: 82
+  symbol: 'Pb'
+  weight: 207.2
+}
 
-
+/*
+-Copper 29
+-Nickel 28
+-Iron 28
+-Manganese 25
+-Chromium 24
+-Boron 5
+-Antimony 51
+-Tin 50
+-Zinc 30
+-Cobalt 27
+*/
 var addArray = [Oxygen.weight, Carbon.weight, Nitrogen.weight, Carbon.weight];
 var sum = 0
 function MyFunction() {
