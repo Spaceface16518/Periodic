@@ -121,11 +121,21 @@ var Lead = {
 
 var addArray = [Lead.weight, Mercury.weight, Xenon.weight, Iodine.weight];
 var sum = 0
-function myFunction() {
+function addToAddArray(nameOfElement) {
+  addArray.push(nameOfElement.weight)
+  console.log("The element added was " + nameOfElement + " (" + nameOfElement.symbol + "). " + "Its weight was " + nameOfElement.weight);
+}
+function sumAddArray() {
   for (var i = 0; i < addArray.length; i++) {
     sum = sum + addArray[i];
 
   }
+//This part will have to be removed
+//before integration into the main page
+//because the console is not directly
+//linked with an HTML webpage.
   console.log(sum)
 }
-myFunction();
+function clearAddArray() {
+  addArray = []
+}
