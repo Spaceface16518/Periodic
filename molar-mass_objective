@@ -119,22 +119,6 @@ var Lead = {
   weight: 207.2
 }
 
-/*
--Copper 29
--Nickel 28
--Iron 28
--Manganese 25
--Chromium 24
--Boron 5
--Antimony 51
--Tin 50
--Zinc 30
--Cobalt 27
-*/
-
-
-
-
 var addArray = [Lead.weight, Mercury.weight, Xenon.weight, Iodine.weight];
 var sum = 0
 function myFunction() {
