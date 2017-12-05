@@ -1,24 +1,30 @@
 <doctype html>
-<html>
-<button onclick = "addFunction(1, H, 1.00784)">Hydrogen</button>
+  <html>
+  <button onclick="addFunction(1, H, 1.00784)">Hydrogen</button>
 
+  <body>
 
-<script>
-var additionList = [];
-var displayList = [];
-function addFunction(atomNum, symbol, weight) {
-additionList.push(weight);
-displayList.push(symbol)
-}
-function combineFunction(){
-var sum = 0
-  for (i = 0; i < additionList.length; i++) {
-sum = sum + additionList[i]
-  }
-  return sum
-}
-addFunction(1, 'H', 1.00784)
-console.log(displayList)
-console.log(sum)
-</script>
-</html>
+  </body>
+  <script>
+    var additionList = [];
+    var displayList = [];
+
+    function addFunction(atomNum, symbol, weight) {
+      additionList.push(weight);
+      displayList.push(symbol)
+    }
+
+    function combineFunction() {
+      var sum = 0
+      for (i = 0; i < additionList.length; i++) {
+        sum = sum + additionList[i]
+      }
+      return sum
+    }
+    addFunction(1, 'H', 1.00784)
+    console.log(displayList)
+    console.log(sum)
+  </script>
+  <script lang="javascript" src="./objective.js"></script>
+
+  </html>
