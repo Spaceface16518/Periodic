@@ -1,0 +1,22 @@
+{
+  "name": "periodic",
+  "version": "1.0.0",
+  "description": "A calculator for various functions of the periodic table of elements.",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Spaceface16518/Periodic.git"
+  },
+  "author": "Amrit Rathie",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Spaceface16518/Periodic/issues"
+  },
+  "dependencies": {
+    "electron": "^1.7.10"
+  }
+}
