@@ -1,11 +1,12 @@
-const electron = require('electron')
-// Module to control application life.
-const app = electron.app
-// Module to create native browser window.
-const BrowserWindow = electron.BrowserWindow
-
-const path = require('path')
-const url = require('url')
+/* jshint esversion: 6 */
+import Element from './assets/modules/Electron.js'; // Element class
+// import select Electron modules
+const Electron = require('electron'); // electron
+const app = Electron.app; // electron app
+const BrowserWindow = Electron.BrowserWindow; // electron browswer windows
+const Menu = Electron.Menu; // electron Menus
+const path = require('path'); // path standard module
+const url = require('url'); // url standard module
 
 let isMacos; // Some MacOS operations are different from others
 if (process.platform === 'darwin') {
