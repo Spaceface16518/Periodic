@@ -1,5 +1,6 @@
 /* jshint esversion: 6  */
 const sqlite = require('sqlite3');
+import Element from '../assets/modules/Element';
 
 let db = new sqlite.Database('../assets/data/periodic.db', (err) => {
   if (err) {
