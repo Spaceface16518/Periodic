@@ -14,7 +14,8 @@ $(document).ready(function() {
   })
 })
 
-function expandElement(elementId) {
+function expandElement(elementId) { // that parameter again
+  addQuery(elementId) // "the" parameter
   let assetPath = path.join(__dirname + './single.html');
   let win = new BrowserWindow({
     width: 200,
@@ -29,3 +30,22 @@ function expandElement(elementId) {
   win.show();
 }
 // TODO: add function that calls this function
+
+function addQuery(query) { // The parameter again
+  qb.run('INSERT INTO Queries VALUES ($queryId, $Query)', {
+    $queryId: lastId(), // Gets max queryID
+    $Query: query // The parameter's final destination is in the querybase. Almost there!
+  })
+}
+
+function queryBaseInit() {
+  qb.run('CREATE TABLE Queries (queryID INTEGER PRIMARY KEY, query TEXT)');
+
+}
+
+lastID = () => {
+  qb.run('SELECT MAX(queryID) FROM Queries', (err, rows) => {
+    logErr(err);
+    return rows;
+  })
+}

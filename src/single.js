@@ -26,4 +26,9 @@ write = () => {
       $(selector).text(Elem.getInfo(HTMLelements[i]));
     });
   });
-};
+};getMaxId = () => {
+  qb.get('SELECT MAX(queryID) FROM Queries', (err, rows) => {
+    logErr(err);
+    return rows
+  })
+}
