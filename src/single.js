@@ -4,15 +4,7 @@ import {
   logErr
 } from '../assets/modules/Error.js';
 const sqlite = require('sqlite');
-let db = new sqlite.Database('../assets/data/Periodic_Table.db');
-
-let id;
-
-$("td").click(function() {
-  id = this.id;
-  let Elem = new Element(id);
-  write();
-});
+const db = new sqlite.Database('../assets/data/Periodic_Table.db');
 const qb = new sqlite.Database('../assets/data/Query.db');
 
 // The single.html page will have areas with id's that will be filled
