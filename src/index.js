@@ -8,6 +8,7 @@ const path = require('path');
 const sqlite = require('sqlite');
 const BrowserWindow = Electron.remote.BrowserWindow;
 const qb = new sqlite.Database('../assets/data/Query.db');
+queryBaseInit();
 
 $(document).ready(function() {
   $("td").click(function() {
