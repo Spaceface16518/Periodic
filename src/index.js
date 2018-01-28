@@ -1,5 +1,8 @@
 /* jshint esversion: 6 */
 import Element from '../assets/modules/Element.js';
+import {
+  logErr
+} from '../assets/modules/Error.js'
 const Electron = require('electron');
 const path = require('path');
 const BrowserWindow = Electron.remote.BrowserWindow;

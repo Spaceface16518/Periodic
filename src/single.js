@@ -1,5 +1,8 @@
 /* jshint esversion: 6  */
 import Element from '../assets/modules/Element';
+import {
+  logErr
+} from '../assets/modules/Error.js';
 const sqlite = require('sqlite');
 let db = new sqlite.Database('../assets/data/Periodic_Table.db');
 
