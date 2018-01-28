@@ -5,6 +5,7 @@ import {
 } from '../assets/modules/Error.js'
 const Electron = require('electron');
 const path = require('path');
+const sqlite = require('sqlite');
 const BrowserWindow = Electron.remote.BrowserWindow;
 const qb = new sqlite.Database('../assets/data/Query.db');
 
