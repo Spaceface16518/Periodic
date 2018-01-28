@@ -10,6 +10,7 @@ $("td").click(function() {
   let Elem = new Element(id);
   write();
 });
+const qb = new sqlite.Database('../assets/data/Query.db');
 
 // The single.html page will have areas with id's that will be filled
 // by this function. Please keep the naming convention of the id's with

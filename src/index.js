@@ -3,6 +3,7 @@ import Element from '../assets/modules/Element.js';
 const Electron = require('electron');
 const path = require('path');
 const BrowserWindow = Electron.remote.BrowserWindow;
+const qb = new sqlite.Database('../assets/data/Query.db');
 
 $(document).ready(function() {
   $("td").click(function(){
