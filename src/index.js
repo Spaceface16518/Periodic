@@ -25,12 +25,9 @@ function expandElement(elementId) { // that parameter again
   win.on('close', () => {
     win = null;
   });
-  // IDEA: win.postMessage(id, *);
-  // win.eval is another possiblity. See issue #4 for info.
   win.loadURL(assetPath);
   win.show();
 }
-// TODO: add function that calls this function
 
 function addQuery(query) { // The parameter again
   qb.run('INSERT INTO Queries VALUES ($queryId, $Query)', {
