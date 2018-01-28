@@ -10,9 +10,10 @@ const BrowserWindow = Electron.remote.BrowserWindow;
 const qb = new sqlite.Database('../assets/data/Query.db');
 
 $(document).ready(function() {
-  $("td").click(function(){
-    let id = this.id;
-  })
+  $("td").click(function() {
+    let id = this.id; // The id of the table data that was clicked
+    expandElement(id); // This parameter will be hot-potatoed for a while
+  });
 })
 
 function expandElement(elementId) { // that parameter again
