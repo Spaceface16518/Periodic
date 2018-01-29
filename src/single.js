@@ -17,8 +17,7 @@ let query = () => {
 }
 
 write = () => {
-  let HTMLelements = []; // Fill with elements available in single.html
-  fillHTMLelements();
+  let HTMLelements = document.getElementsByClassName('element'); // Fill with elements available in single.html
   $.each(HTMLelements, function(i) {
     $(HTMLelements[i]).click(function() {
       let selector = "#" + HTMLelements[i];
@@ -32,12 +31,4 @@ getMaxId = () => {
     logErr(err);
     return rows
   })
-}
-
-fillHTMLelements = () => {
-  // NOTE: The HTMLDOM method getElementByClassName returns an array
-  let elements = document.getElementsByClassName('element');
-  for (var i = 0; i < elements.length; i++) {
-    HTMLelements.push(elements[i])
-  }
 }
